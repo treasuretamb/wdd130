@@ -68,6 +68,7 @@ nav a {
   color: var(--clr-navigation-link);
   text-decoration: none;
   padding: 1rem;
+
 }
 
 nav a:link, nav a:visited {

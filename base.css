@@ -1,5 +1,6 @@
 *, ::after, ::before {
 
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -14,29 +15,31 @@ main {
 
 main img {
 
-  width: 150px;
+  width: 130px;
   height: auto;
   border-radius: 5px;
+  float: right;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.656);
+  border: 1px solid #333;
 
 }
 
 aside {
 
   width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
   text-align: center;
-  border-radius: 5px;
+  position: relative;
+  padding: 0;
+
 }
 
 aside img {
 
-  width: 200px;
+  width: 280px;
   height: auto;
   border-radius: 5px;
+  
 
 }
 
@@ -53,4 +56,53 @@ footer {
   text-align: center;
   padding-block: 1rem;
 
+}
+
+ul {
+
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+a {
+
+  text-decoration: none;
+  color: black;
+
+}
+
+.country {
+  color: antiquewhite;
+  position: absolute;
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+  margin-top: .5rem;
+  
+}
+/* Class Selectors */
+
+.main-heading {
+  font-size: 1.84rem;
+}
+
+.intro-paragraph {
+  width: 75%;
+}
+
+.box {
+
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(246, 135, 135, 0.2);
+  background-color: bisque;
+  color: #333;
+  border-radius: 5px;
+
+}
+
+.hero {
+  padding: 1rem;
 }
