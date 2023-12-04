@@ -5,11 +5,47 @@
   box-sizing: border-box;
 }
 
-main {
+header, .grid, footer {
 
   max-width: 840px;
   padding: 1rem;
+  margin: auto;
 
+}
+
+nav {
+
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+ul {
+
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+nav a {
+
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
 }
 
 
@@ -30,6 +66,8 @@ aside {
   width: 20rem;
   text-align: center;
   position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
   padding: 0;
 
 }
@@ -52,27 +90,33 @@ p {
 footer {
 
   margin-top: 15px;
-  border-top: 1px solid #000;
+  border-top: 2px solid #000;
   text-align: center;
   padding-block: 1rem;
 
 }
 
-ul {
 
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
+/* Class Selectors */
 
-}
+.grid {
 
+  display: grid;
+  align-items: center;
 
-a {
-
-  text-decoration: none;
-  color: black;
 
 }
+
+.main-heading {
+  color: steelblue;
+  font-size: 1.2rem;
+  border-bottom: solid 2px steelblue;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
 
 .country {
   color: antiquewhite;
@@ -81,11 +125,6 @@ a {
   margin-left: 1.5rem;
   margin-top: .5rem;
   
-}
-/* Class Selectors */
-
-.main-heading {
-  font-size: 1.84rem;
 }
 
 .intro-paragraph {
