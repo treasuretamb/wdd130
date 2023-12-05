@@ -48,6 +48,7 @@ body {
 
 header {
   min-height: 4rem;
+  background-color: var(--clr-accent1-2);
 }
 
 nav {
@@ -56,6 +57,7 @@ nav {
   align-items: center;
   padding-block: .5rem;
   padding-inline: 4rem;
+  
 }
 
 ul {
@@ -67,7 +69,7 @@ li {
   list-style: none;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: var(--clr-primary);
 }
@@ -115,7 +117,7 @@ footer {
   display: grid;
   grid-auto-flow: row;
   place-content: center;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px ;
 }
 
 .main-heading {
@@ -131,10 +133,11 @@ footer {
   color: var(--clr-accent3);
   margin: 0;
   text-align: start;
+  max-width: 280px;
  }
 
  .hero-image {
-  width: 250px;
+  width: 220px;
   border-radius: 5px;
  }
 
