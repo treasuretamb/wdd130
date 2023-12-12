@@ -169,6 +169,160 @@ footer {
   width: 400px;
  }
 
+
+
+ /* contact page only */
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.container {
+
+  padding-inline: 2rem;
+
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  min-height: 60svh;
+}
+
+.company-contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  min-height: 60svh;
+}
+
+.map {
+
+  grid-column: 1/4;
+  min-height: 3rem;
+
+}
+.company-contact-heading {
+
+  grid-column: 1/4;
+
+}
+
+.team-heading {
+
+  grid-column: 1/4;
+  margin-bottom: 3rem;
+
+}
+
+.form-heading {
+
+  margin-bottom: 3rem;
+
+}
+
+.contact-images1 {
+
+  width: 165px;
+  /* border-radius: 5px 5px 0px 0px; */
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+
+}
+
+.contact-images2 {
+
+  width: 165px;
+  /* border-radius: 5px 5px 0px 0px; */
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  border: solid 2px grey ;
+  
+
+}
+
+.cards {
+
+  /* border: solid 2px var(--clr-secondary); */
+  padding-block: 1rem;
+  border-radius: 100px 100px 10px 10px;
+  box-shadow: 1px 1px 10px black;
+}
+
+.name1 {
+
+  margin-bottom: 1rem;
+  border-bottom: solid 1px var(--clr-secondary);
+  padding-inline: 0px;
+  padding-block: 4px;
+  background-color: var(--clr-accent2);
+  color: var(--clr-accent3);
+  box-shadow: 1px 1px 5px black;
+
+}
+
+.name2 {
+
+  margin-bottom: 1rem;
+  border-bottom: solid 1px var(--clr-secondary);
+  padding-inline: 0px;
+  background-color: var(--clr-accent2);
+  color: var(--clr-accent3);
+
+}
+
+.position {
+
+  margin-bottom: 0.5rem;
+
+}
+
+.form {
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
 /* Footer */
 
 .footer-nav {
