@@ -384,8 +384,10 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--clr-primary);
+  color: var(--clr-accent3);
+  font-weight: bold;
+  font-size: 1rem;
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
@@ -393,7 +395,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: var(--clr-secondary);
 }
 
 /* Home Page CSS */
@@ -407,21 +409,33 @@ input[type="submit"]:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
 }
 
+.home-main-heading {
+  color: var(--clr-accent3);
+  background-color: var(--clr-accent4);
+}
+
 .newsletter-section {
-  background-color: #f0f0f0;
+
+  background-color: var(--clr-accent1-2);
   padding: 40px;
   text-align: center;
 }
 
-.cta-section {
+.call-to-action {
   padding: 20px;
   background-color: var(--clr-accent2);
   text-align: center;
-  color: white;
+  color: var(--clr-accent3);
+  text-decoration: none;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.call-to-action a {
+  text-decoration: none;
+  color: var(--clr-primary);
 }
 
 .grid-container {
@@ -443,10 +457,19 @@ input[type="submit"]:hover {
   border-radius: 4px;
 }
 
-.newsletter-form input,
-.newsletter-form button {
+.newsletter-form input {
   margin-top: 10px;
   padding: 10px;
+}
+
+.subscription-button {
+
+  width: calc(50% - 5px);
+  border-radius: 0 4px 4px 0;
+  background-color: var(--clr-primary);
+  color: var(--clr-accent3);
+  padding: 10px;
+
 }
 
 
